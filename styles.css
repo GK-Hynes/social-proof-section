@@ -14,6 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 
 body {
@@ -25,13 +26,13 @@ body {
 .container {
   width: 100%;
   max-width: 1076px;
-  padding: 1rem;
+  padding: 1.5rem;
   margin: 4rem auto;
 }
 
 .social-proof {
   text-align: center;
-  margin-bottom: 1.75rem;
+  margin-bottom: 3rem;
 }
 
 .heading--main {
@@ -66,7 +67,7 @@ body {
 }
 
 .testimonials {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -120,4 +121,45 @@ body {
 
 .footer a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 640px) {
+  .social-proof {
+    display: flex;
+  }
+
+  .intro {
+    flex: 1;
+    text-align: left;
+  }
+
+  .heading--main {
+    font-size: 3rem;
+  }
+
+  .copy {
+    padding-right: 2rem;
+  }
+
+  .reviews {
+    flex: 1;
+  }
+
+  .review {
+    display: flex;
+    align-items: center;
+  }
+
+  .review-icons {
+    margin-right: 2rem;
+  }
+
+  .review-2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .review-3 {
+    margin-left: auto;
+  }
 }
