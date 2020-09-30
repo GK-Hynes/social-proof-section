@@ -29,9 +29,9 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1176px;
-  padding: 1.5rem;
-  margin: 4rem auto;
+  max-width: 1172px;
+  margin: 5rem auto 3rem auto;
+  padding: 1rem 1.5rem;
 }
 
 .social-proof {
@@ -51,26 +51,35 @@ body {
   line-height: 1.5;
   font-weight: 500;
   color: var(--dark-grayish-magenta);
-  margin-bottom: 1rem;
+  margin-bottom: 2.75rem;
+}
+
+.reviews {
+  max-width: 540px;
+  margin: 0 auto;
 }
 
 .review {
   background: var(--light-grayish-magenta);
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 0.5rem;
   max-width: 445px;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem;
 }
 
 .review-icons {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .review__text {
   font-weight: 700;
+  font-size: 0.825rem;
   color: var(--very-dark-magenta);
 }
 
@@ -85,7 +94,7 @@ body {
 
 .card {
   max-width: 350px;
-  padding: 2.25rem 2rem;
+  padding: 2.25rem 1.625rem;
   background: var(--very-dark-magenta);
   color: var(--white);
   border-radius: 0.5rem;
@@ -99,6 +108,7 @@ body {
 .card__name,
 .card__verified {
   display: block;
+  font-size: 0.825rem;
 }
 
 .card__name {
@@ -114,12 +124,12 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 .card__quote {
-  line-height: 1.5;
-  font-size: 14px;
+  line-height: 1.7;
+  font-size: 0.825rem;
   color: var(--light-grayish-magenta);
 }
 
@@ -137,8 +147,12 @@ body {
   body {
     background-image: url("./images/bg-pattern-top-desktop.svg"),
       url("./images/bg-pattern-bottom-desktop.svg");
-    background-position: top left, center right;
+    background-position: top left, center bottom right;
     background-repeat: no-repeat;
+  }
+
+  .container {
+    margin: 7.5rem auto 3rem auto;
   }
 
   .social-proof {
@@ -167,12 +181,18 @@ body {
     display: flex;
     align-items: center;
     padding: 1.25rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .review-icons {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
     margin-right: 2rem;
     margin-bottom: 0;
+  }
+
+  .review-1 {
+    margin-right: auto;
   }
 
   .review-2 {
