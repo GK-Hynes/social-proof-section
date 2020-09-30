@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body {
@@ -44,6 +44,7 @@ body {
   font-weight: 700;
   color: var(--very-dark-magenta);
   margin-bottom: 1rem;
+  line-height: 1;
 }
 
 .copy {
@@ -74,15 +75,17 @@ body {
 }
 
 .testimonials {
+  padding-bottom: 30px;
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 
 .card {
   max-width: 350px;
-  padding: 2.25rem 1.75rem;
+  padding: 2.25rem 2rem;
   background: var(--very-dark-magenta);
   color: var(--white);
   border-radius: 0.5rem;
@@ -117,6 +120,7 @@ body {
 .card__quote {
   line-height: 1.5;
   font-size: 14px;
+  color: var(--light-grayish-magenta);
 }
 
 .footer {
@@ -133,7 +137,7 @@ body {
   body {
     background-image: url("./images/bg-pattern-top-desktop.svg"),
       url("./images/bg-pattern-bottom-desktop.svg");
-    background-position: top left, bottom right;
+    background-position: top left, center right;
     background-repeat: no-repeat;
   }
 
@@ -144,6 +148,7 @@ body {
   .intro {
     flex: 1;
     text-align: left;
+    padding-right: 6rem;
   }
 
   .heading--main {
@@ -181,19 +186,18 @@ body {
 
   .testimonials {
     flex-direction: row;
-    /* align-items: center; */
+    align-items: center;
+    justify-content: space-between;
   }
 
   .card-1 {
-    margin-bottom: 2rem;
   }
 
   .card-2 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    transform: translateY(1rem);
   }
 
   .card-3 {
-    margin-top: 4rem;
+    transform: translateY(2rem);
   }
 }
