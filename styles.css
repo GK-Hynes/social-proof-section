@@ -14,7 +14,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
 }
 
 body {
@@ -34,24 +33,26 @@ body {
   padding: 1rem 1.5rem;
 }
 
-.social-proof {
+.intro {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.heading--main {
+.intro__heading {
   font-size: 2rem;
   font-weight: 700;
   color: var(--very-dark-magenta);
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem auto;
   line-height: 1;
+  max-width: 500px;
 }
 
-.copy {
+.intro__text {
   line-height: 1.5;
   font-weight: 500;
   color: var(--dark-grayish-magenta);
-  margin-bottom: 2.75rem;
+  margin: 0 auto 2.75rem auto;
+  max-width: 500px;
 }
 
 .reviews {
@@ -80,6 +81,7 @@ body {
 .review__text {
   font-weight: 700;
   font-size: 0.825rem;
+  text-align: center;
   color: var(--very-dark-magenta);
 }
 
@@ -147,7 +149,7 @@ body {
   body {
     background-image: url("./images/bg-pattern-top-desktop.svg"),
       url("./images/bg-pattern-bottom-desktop.svg");
-    background-position: top left, center bottom right;
+    background-position: top left, bottom right;
     background-repeat: no-repeat;
   }
 
@@ -155,22 +157,23 @@ body {
     margin: 7.5rem auto 3rem auto;
   }
 
-  .social-proof {
+  .intro {
     display: flex;
   }
 
-  .intro {
+  .intro__copy {
     flex: 1;
     text-align: left;
-    padding-right: 6rem;
   }
 
-  .heading--main {
+  .intro__heading {
     font-size: 3rem;
+    margin-left: 0;
   }
 
-  .copy {
+  .intro__text {
     padding-right: 2rem;
+    margin-left: 0;
   }
 
   .reviews {
@@ -208,9 +211,6 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .card-1 {
   }
 
   .card-2 {
