@@ -120,6 +120,7 @@ body {
 
 .card__verified {
   color: var(--soft-pink);
+  font-weight: 400;
 }
 
 .card__image {
@@ -154,7 +155,7 @@ body {
   }
 
   .container {
-    margin: 7.5rem auto 3rem auto;
+    margin: 6.5rem auto 3rem auto;
   }
 
   .intro {
